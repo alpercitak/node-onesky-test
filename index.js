@@ -107,6 +107,6 @@ const onesky = new OneSky(params);
     // // export translation app-descriptions
     // console.log(await onesky.translations.export_appdescriptions(project_id, {locale: "es"}));
 
-    // get translation status
-    console.log(await onesky.translations.status(project_id, {file_name: "en.json", locale: "es"}));
+    // // get translation status
+    // console.log(await onesky.translations.status(project_id, {file_name: "en.json", locale: "es"}));
 })();
