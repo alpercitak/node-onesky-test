@@ -22,7 +22,7 @@
   "homepage": "https://github.com/alpercitak/node-onesky-test",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "node-onesky": "^0.0.3"
+    "node-onesky": "^0.0.4"
   },
   "devDependencies": {
     "@types/md5": "^2.3.2",

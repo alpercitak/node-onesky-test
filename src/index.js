@@ -1,7 +1,7 @@
 require('dotenv').config({path: __dirname + '/./../.env'});
 
 const fs = require("fs");
-const OneSky = require("node-onesky");
+const OneSky = require("node-onesky").OneSky;
 
 const params = {PUBLIC_KEY: process.env.ONESKY_PUBLIC_KEY, SECRET_KEY: process.env.ONESKY_SECRET_KEY};
 const onesky = new OneSky(params);
