@@ -1,12 +1,14 @@
-require("dotenv").config();
+require('dotenv').config({path: __dirname + '/./../.env'});
+
 const fs = require("fs");
-const params = {PUBLIC_KEY: process.env.ONESKY_PUBLIC_KEY, SECRET_KEY: process.env.ONESKY_SECRET_KEY};
 const OneSky = require("node-onesky");
+
+const params = {PUBLIC_KEY: process.env.ONESKY_PUBLIC_KEY, SECRET_KEY: process.env.ONESKY_SECRET_KEY};
 const onesky = new OneSky(params);
 
 (async () => {
     // // list locales
-    // console.log(await locales());
+    // console.log(await onesky.locales.list());
 
     // // list project_types
     // console.log(await onesky.project_types.list());
@@ -65,7 +67,7 @@ const onesky = new OneSky(params);
     // // list the files of a project
     // console.log(await onesky.files.list(project_id, {per_page: 100, page: 1}));
 
-    // upload a file to a project
+    // // upload a file to a project
     // const data = {
     //     locale: "en",
     //     file: {
